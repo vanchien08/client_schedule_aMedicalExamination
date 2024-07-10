@@ -6,9 +6,10 @@ export const fetchGenderStart = () => {
             let res=await getAllCode("GENDER");
      //      console.log('resssssssssss>>action',res.data.data)
   
+     dispatch(fetchGenderSuccess(res.data.data));
             if(res.errCode ===0)
             {
-                dispatch(fetchGenderSuccess(res.data.data));
+                
             }
             else{
                dispatch(fetchGenderFail());

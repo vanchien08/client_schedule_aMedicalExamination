@@ -18,7 +18,7 @@ const AdminReducer = (state = initialState, action) => {
             case actionTypes.FETCH_GENDER_SUCCESS: 
             let cpstate={...state};
             cpstate.genders=action.data;
-            console.log("cpstate>>",action)
+         //   console.log("cpstate>>",action)
             return {
                 ...cpstate,
                 

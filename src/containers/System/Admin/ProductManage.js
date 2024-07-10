@@ -31,7 +31,7 @@ class ProductManage extends Component {
 
     async componentDidMount() {
       this.props.getGenderStart();
-      console.log("genderreduxxxxxxxxxxx",this.props.genderRedux)
+    
         try {
         //    let datagender=await getAllCode('gender');
        //     let datagender=await getAllCode('GENDER');
@@ -113,7 +113,7 @@ class ProductManage extends Component {
     }
 
     render() {
-      // console.log("genderreduxxxxxxxxxxx",this.props.genderRedux)
+      console.log("genderredux in render",this.props.genderRedux)
         let gender=this.state.gender;
     //  let gender=this.state.learn;
         let role=this.state.role;
